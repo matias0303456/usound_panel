@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "./app_components/layout/Layout";
+import Router from "./Router";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ESTA ES UNA PRUEBA DE asdasdasELECTRON
-        </a>
-      </header>
+      <Layout>
+        <Router />
+      </Layout>
     </div>
   );
 }
