@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          ESTA ES UNA PRUEBA DE ELECTRON
+          ESTA ES UNA PRUEBA DE asdasdasELECTRON
         </a>
       </header>
     </div>
