@@ -1,18 +1,14 @@
+import '../../../styles/layout/header.css'
+import Logo from '../../assets/header-logo.png'
+
 export default function Header() {
 
     return (
         <header>
-            <h1>Logo</h1>
-            <nav>
-                <ul>
-                    <li onClick={() => window.location.href = "/"}>
-                        Inicio
-                    </li>
-                    <li onClick={() => window.location.href = "/patients"}>
-                        Pacientes
-                    </li>
-                </ul>
-            </nav>
+            <div id="logo">
+                <img src={Logo} />
+            </div>
+            <h1>Panel de usuario</h1>
         </header>
     )
 }

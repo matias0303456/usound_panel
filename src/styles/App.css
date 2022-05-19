@@ -7,4 +7,5 @@ body{
   background: var(--dark-gradient);
   background-repeat: no-repeat;
   height: 100vh;
+  padding: 10px;
 }
