@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import UserContext from '../../../context/userContext'
+import UserContext from '../../../contexts/UserContext'
 import authService from '../../../services/authService'
 import '../../../styles/home/loginForm.css'
 

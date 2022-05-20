@@ -1,5 +1,21 @@
+import { useContext } from "react"
+import Nav from "../../app_components/Nav"
+import UserContext from "../../contexts/UserContext"
+
 export default function PatientsList() {
-    return(
-        <h3>Lista de pacientes</h3>
+
+    const { user } = useContext(UserContext)
+
+    console.log(user)
+
+    return (
+        <div className="mainContent">
+            {user !== null &&
+                <Nav />
+            }
+            <section>
+                <h3>Lista de pacientes</h3>
+            </section>
+        </div>
     )
 };

@@ -1,8 +1,8 @@
 import LoginForm from "./components/LoginForm";
 import '../../styles/home/home.css'
-import Nav from "../../app_components/layout/components/Nav";
+import Nav from "../../app_components/Nav";
 import { useContext } from "react";
-import UserContext from "../../context/userContext";
+import UserContext from "../../contexts/UserContext";
 
 export default function Home() {
 
@@ -19,7 +19,7 @@ export default function Home() {
                 {
                     user === null ?
                         <>
-                            <h3>Inicie sesión para entrar al sistema</h3>
+                            <h3>Inicie sesión para ingresar al sistema</h3>
                             <LoginForm />
                         </> :
                         <h3 id="welcomeSection">

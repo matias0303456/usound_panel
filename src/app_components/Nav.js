@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import UserContext from '../../../context/userContext'
-import authService from '../../../services/authService'
-import '../../../styles/home/nav.css'
+import UserContext from '../contexts/UserContext'
+import authService from '../services/authService'
+import '../styles/nav.css'
 
 export default function Nav() {
 
@@ -26,6 +26,7 @@ export default function Nav() {
                     authService.logout(user.token)
                     setUser(null)
                     sessionStorage.clear()
+                    navigate('/')
                 }}>
                     Cerrar sesión
                 </li>
