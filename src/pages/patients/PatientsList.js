@@ -1,12 +1,14 @@
 import { useContext } from "react"
 import Nav from "../../app_components/Nav"
 import UserContext from "../../contexts/UserContext"
+import usePatients from "../../hooks/usePatients"
+import PatientsTable from "./components/PatientsTable"
 
 export default function PatientsList() {
 
     const { user } = useContext(UserContext)
 
-    console.log(user)
+    const patients = usePatients()
 
     return (
         <div className="mainContent">
@@ -14,7 +16,9 @@ export default function PatientsList() {
                 <Nav />
             }
             <section>
-                <h3>Lista de pacientes</h3>
+                <PatientsTable
+                    patients={patients}
+                />
             </section>
         </div>
     )

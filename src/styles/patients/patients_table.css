@@ -1,0 +1,10 @@
+table {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#tableParent {
+    height: 450px;
+    overflow: scroll;
+}
