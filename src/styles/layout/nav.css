@@ -1,0 +1,19 @@
+nav {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 20px;
+    background: var(--light-gradient);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(2) {
+    margin-top: 10px;
+}
