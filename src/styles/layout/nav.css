@@ -4,14 +4,20 @@ nav {
 
 nav ul {
     list-style: none;
+    padding-left: 25px;
 }
 
 nav ul li {
     text-align: center;
     padding: 20px;
-    background: var(--light-gradient);
+    background: #02B4F9;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 1px 1px 1px white;
+}
+
+nav ul li:hover {
+    background: var(--light-gradient);
 }
 
 nav ul li:nth-child(2) {
