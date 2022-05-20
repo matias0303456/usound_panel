@@ -1,4 +1,18 @@
-h3 {
+.mainContent {
+    display: flex;
+    justify-content: space-between;;
+}
+
+.mainContent nav {
+    width: 20%;
+}
+
+.mainContent section {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.mainContent section h3 {
     color: white;
     text-align: center;
 }

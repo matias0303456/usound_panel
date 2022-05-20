@@ -1,9 +1,17 @@
+import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../../../styles/layout/nav.css'
+import UserContext from '../../../context/userContext'
+import authService from '../../../services/authService'
+import '../../../styles/home/nav.css'
 
 export default function Nav() {
 
     const navigate = useNavigate()
+
+    const {
+        user,
+        setUser
+    } = useContext(UserContext)
 
     return (
         <nav>
@@ -13,6 +21,13 @@ export default function Nav() {
                 </li>
                 <li onClick={() => navigate('/patients')}>
                     Pacientes
+                </li>
+                <li onClick={() => {
+                    authService.logout(user.token)
+                    setUser(null)
+                    sessionStorage.clear()
+                }}>
+                    Cerrar sesión
                 </li>
             </ul>
         </nav>

@@ -1,21 +1,26 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import UserContext from '../../../context/userContext'
 import authService from '../../../services/authService'
 import '../../../styles/home/loginForm.css'
 
 export default function LoginForm() {
 
-    const [user, setUser] = useState({})
+    const {
+        setUser
+    } = useContext(UserContext)
+
+    const [auth, setAuth] = useState({})
 
     const handleChange = e => {
-        setUser({
-            ...user,
+        setAuth({
+            ...auth,
             [e.target.name]: e.target.value
         })
     }
 
     const handleSubmit = e => {
         e.preventDefault()
-        authService.login(user)
+        authService.login(auth)
             .then(data => {
                 if (data.error) {
                     document.getElementById('loginError').classList.remove('d-none')
@@ -23,6 +28,8 @@ export default function LoginForm() {
                 }
                 document.getElementById('loginError').classList.add('d-none')
                 document.getElementById('loginForm').reset()
+                setUser(data)
+                sessionStorage.setItem('user', JSON.stringify(data))
             })
     }
 
