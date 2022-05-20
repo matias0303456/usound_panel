@@ -8,5 +8,6 @@ main nav {
 }
 
 main .mainContent {
+    padding: 20px;
     width: 80%;
 }

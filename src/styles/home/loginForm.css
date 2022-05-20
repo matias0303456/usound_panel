@@ -1,0 +1,32 @@
+form{
+    text-align: center;
+}
+
+form .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form .form-group label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+form .form-group input[type="email"], 
+form .form-group input[type="password"]{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form .form-group input[type="submit"]{
+    padding: 10px;
+    border-radius: 10px;
+    background: #02B4F9;
+    color: white;
+    cursor: pointer;
+}
+
+form .form-group input[type="submit"]:hover{
+    background: var(--light-gradient)
+}
