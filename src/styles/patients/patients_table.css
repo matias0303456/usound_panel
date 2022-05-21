@@ -1,10 +1,26 @@
+#tableParent {
+    height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 2px #1BE6BA;
+}
+
 table {
     color: white;
     text-align: center;
     width: 100%;
 }
 
-#tableParent {
-    height: 450px;
-    overflow: scroll;
+th {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+}
+
+td {
+    padding: 8px;
 }
