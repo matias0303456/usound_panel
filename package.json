@@ -6,6 +6,8 @@
   "homepage": ".",
   "dependencies": {
     "@electron/remote": "^2.0.8",
+    "@fontsource/montserrat": "^4.5.10",
+    "@fontsource/roboto": "^4.5.7",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",

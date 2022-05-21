@@ -4,6 +4,8 @@ import Router from "./Router";
 import { BrowserRouter } from 'react-router-dom';
 import { useState } from 'react';
 import UserContext from './contexts/UserContext';
+import '@fontsource/montserrat'
+import '@fontsource/roboto'
 
 function App() {
 
