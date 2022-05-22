@@ -16,3 +16,7 @@
     color: white;
     text-align: center;
 }
+
+.mainContent section .loginMessage{
+    margin-top: 50px;
+}

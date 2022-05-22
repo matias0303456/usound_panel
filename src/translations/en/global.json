@@ -1,0 +1,27 @@
+{
+    "home": {
+        "loginMessage": "Login to enter the system",
+        "welcomeMessage": "Welcome, "
+    },
+    "header": {
+        "title": "User dashboard"
+    },
+    "form": {
+        "errorMessage": "Wrong username or password.",
+        "user": "User",
+        "password": "Password",
+        "button": "Login"
+    },
+    "nav": {
+        "home": "Home",
+        "patients": "Patients",
+        "logout": "Logout"
+    },
+    "patientsTable": {
+        "loading": "Loading patients...",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "age": "Age",
+        "country": "Country"
+    }
+}

@@ -14,6 +14,10 @@ form .form-group label {
     margin-bottom: 5px;
 }
 
+form .form-group input {
+    border: none;
+}
+
 form .form-group input[type="text"],
 form .form-group input[type="password"] {
     border-radius: 5px;

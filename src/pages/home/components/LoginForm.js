@@ -1,4 +1,5 @@
 import { useContext, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import UserContext from '../../../contexts/UserContext'
 import authService from '../../../services/authService'
 import '../../../styles/home/loginForm.css'
@@ -10,6 +11,8 @@ export default function LoginForm() {
     } = useContext(UserContext)
 
     const [auth, setAuth] = useState({})
+
+    const [t] = useTranslation('global')
 
     const handleChange = e => {
         setAuth({
@@ -36,18 +39,18 @@ export default function LoginForm() {
     return (
         <form id='loginForm' onChange={e => handleChange(e)} onSubmit={e => handleSubmit(e)}>
             <small id='loginError' className='d-none'>
-                Nombre de usuario o contraseña incorrectos.
+                {t('form.errorMessage')}
             </small>
             <div className='form-group'>
-                <label htmlFor="text">Usuario</label>
+                <label htmlFor="text">{t('form.user')}</label>
                 <input type="text" name="username" />
             </div>
             <div className='form-group'>
-                <label htmlFor="password">Contraseña</label>
+                <label htmlFor="password">{t('form.password')}</label>
                 <input type="password" name="password" />
             </div>
             <div className='form-group'>
-                <input type="submit" value="Iniciar sesión" />
+                <input type="submit" value={t('form.button')} />
             </div>
         </form>
     )

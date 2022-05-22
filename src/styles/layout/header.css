@@ -1,6 +1,7 @@
 header {
     display: flex;
     margin-top: 20px;
+    align-items: center;
 }
 
 header #logo {
@@ -12,11 +13,36 @@ header #logo img {
     width: 100%;
 }
 
-header h1{
-    width: 70%;
+header h1 {
+    width: 60%;
     color: white;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: "Roboto";
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+}
+
+header #languages {
+    width: 10%;
+}
+
+header #languages button {
+    padding: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #1BE6BA;
+    background: var(--light-gradient);
+    color: white;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+
+header #languages button:hover,
+.selectedLanguage {
+    background: white !important;
+    color: black !important;
+}
+
+header #languages button:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
 }

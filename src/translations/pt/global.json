@@ -1,0 +1,27 @@
+{
+    "home": {
+        "loginMessage": "Iniciar sessão para entrar no sistema",
+        "welcomeMessage": "Ben-vindo, "
+    },
+    "header": {
+        "title": "Painel de usuário"
+    },
+    "form": {
+        "errorMessage": "Nome de usuário ou senha incorretos.",
+        "user": "Usuário",
+        "password": "Senha",
+        "button": "Entre"
+    },
+    "nav": {
+        "home": "Home",
+        "patients": "Pacientes",
+        "logout": "Sair"
+    },
+    "patientsTable": {
+        "loading": "Carregamento dos pacientes...",
+        "firstName": "Nome",
+        "lastName": "Sobrenome",
+        "age": "Idade",
+        "country": "País"
+    }
+}

@@ -3,12 +3,15 @@ import '../../styles/home/home.css'
 import Nav from "../../app_components/Nav";
 import { useContext } from "react";
 import UserContext from "../../contexts/UserContext";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
 
     const {
         user
     } = useContext(UserContext)
+
+    const [t] = useTranslation('global')
 
     return (
         <div className="mainContent">
@@ -19,11 +22,11 @@ export default function Home() {
                 {
                     user === null ?
                         <>
-                            <h3>Inicie sesión para ingresar al sistema</h3>
+                            <h3 className="loginMessage">{t('home.loginMessage')}</h3>
                             <LoginForm />
                         </> :
                         <h3 id="welcomeSection">
-                            Bienvenido / a, {user.user.username}
+                            {t('home.welcomeMessage')}{user.user.username}
                         </h3>
                 }
             </section>

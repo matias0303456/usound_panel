@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next'
 import '../../../styles/patients/patients_table.css'
 
 export default function PatientsTable({
     patients
 }) {
 
+    const [t] = useTranslation('global')
+
     if (patients.length === 0) {
-        return <h3>Cargando pacientes...</h3>
+        return <h3>{t('patientsTable.loading')}</h3>
     }
 
     return (
@@ -13,10 +16,10 @@ export default function PatientsTable({
             <table>
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Edad</th>
-                        <th>País</th>
+                        <th>{t('patientsTable.firstName')}</th>
+                        <th>{t('patientsTable.lastName')}</th>
+                        <th>{t('patientsTable.age')}</th>
+                        <th>{t('patientsTable.country')}</th>
                     </tr>
                 </thead>
                 <tbody>
