@@ -34,8 +34,16 @@
     "electron:start": "wait-on tcp:3000 && electron ."
   },
   "build": {
+    "mac": {
+      "icon": "./src/app_components/assets/icon.png",
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "icon": "./src/app_components/assets/icon.png"
+    },
     "extends": null,
     "appId": "usound_panel",
+    "productName": "uSound Panel",
     "files": [
       "dist/**/*",
       "build/**/*",

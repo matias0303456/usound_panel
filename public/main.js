@@ -3,15 +3,23 @@ const path = require("path")
 const isDev = require("electron-is-dev")
 
 require("@electron/remote/main").initialize()
-require('electron-reload')
+
+if (isDev) {
+  require('electron-reload')
+}
 
 const createWindow = () => {
   const win = new BrowserWindow({
     show: false,
+    title: 'uSound Panel',
     webPreferences: {
-      enableRemoteModule: true
+      enableRemoteModule: true,
+      nodeIntegration: true
     }
   })
+  if (!isDev) {
+    win.removeMenu()
+  }
   win.maximize()
   win.show()
 
