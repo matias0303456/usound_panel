@@ -37,7 +37,7 @@ export default function PatientsTable({
                 <tbody>
                     {patients.map(p => {
                         return (
-                            <tr>
+                            <tr key={p.id}>
                                 <td>{p.sweeper_name}</td>
                                 <td>{p.hunter_name}</td>
                                 <td>{p.amount}</td>

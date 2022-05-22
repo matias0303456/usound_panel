@@ -16,8 +16,9 @@ nav ul li {
     box-shadow: 1px 1px 1px white;
 }
 
-nav ul li:hover {
-    background: var(--light-gradient);
+nav ul li:hover,
+.currentPage {
+    background: var(--light-gradient) !important;
 }
 
 nav ul li:nth-child(2),
