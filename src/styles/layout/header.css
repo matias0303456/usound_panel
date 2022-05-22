@@ -14,7 +14,7 @@ header #logo img {
 }
 
 header h1 {
-    width: 60%;
+    width: 50%;
     color: white;
     display: flex;
     justify-content: center;
@@ -23,7 +23,8 @@ header h1 {
 }
 
 header #languages {
-    width: 10%;
+    width: 20%;
+    text-align: center;
 }
 
 header #languages button {

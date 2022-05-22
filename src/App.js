@@ -1,7 +1,7 @@
 import './styles/App.css'
 import Layout from "./app_components/layout/Layout";
 import Router from "./Router";
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import UserContext from './contexts/UserContext';
 import '@fontsource/montserrat'
@@ -31,11 +31,11 @@ function App() {
           setTheme
         }}
         >
-          <BrowserRouter>
+          <HashRouter>
             <Layout>
               <Router />
             </Layout>
-          </BrowserRouter>
+          </HashRouter>
           <ThemeSwitcher />
         </ThemeContext.Provider>
       </UserContext.Provider>

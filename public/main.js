@@ -12,6 +12,8 @@ const createWindow = () => {
   const win = new BrowserWindow({
     show: false,
     title: 'uSound Panel',
+    minWidth: 800,
+    minHeight: 600,
     webPreferences: {
       enableRemoteModule: true,
       nodeIntegration: true
