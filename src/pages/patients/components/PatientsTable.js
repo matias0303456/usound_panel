@@ -8,7 +8,19 @@ export default function PatientsTable({
     const [t] = useTranslation('global')
 
     if (patients.length === 0) {
-        return <h3>{t('patientsTable.loading')}</h3>
+        return (
+            <>
+                <h3>{t('patientsTable.loading')}</h3>
+                <div id="animationParent">
+                    <div className="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </>
+        )
     }
 
     return (
